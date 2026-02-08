@@ -12,6 +12,7 @@ namespace More_Cheese
     public class BlockCheeseCurdsBundleMod : Block
     {
         public Dictionary<string, MeshData> meshes = new Dictionary<string, MeshData>();
+        public AssetLocation outputCh = new AssetLocation();
 
         WorldInteraction[] interactions;
 
@@ -23,6 +24,17 @@ namespace More_Cheese
             ItemStack[] saltStack = new ItemStack[] { new ItemStack(api.World.GetItem(new AssetLocation("salt")), 5) };
 
             interactions = new WorldInteraction[] {
+                new WorldInteraction
+                {
+                    ActionLangCode = "morecheese:blockhelp-curdbundle-unbundled",
+                    MouseButton = EnumMouseButton.Right,
+                    Itemstacks = null,
+                    ShouldApply = (WorldInteraction wi, BlockSelection blockSelection, EntitySelection entitySelection) =>
+                    {
+                        BECheeseCurdsBundleMod beccb = api.World.BlockAccessor.GetBlockEntity(blockSelection.Position) as BECheeseCurdsBundleMod;
+                        return beccb?.State == EnumCurdsBundleModState.Unbundled;
+                    }
+                },
                 new WorldInteraction() {
                     ActionLangCode = "blockhelp-curdbundle-addstick",
                     MouseButton = EnumMouseButton.Right,
@@ -131,8 +143,20 @@ namespace More_Cheese
         {
             BECheeseCurdsBundleMod beccb = api.World.BlockAccessor.GetBlockEntity(blockSel.Position) as BECheeseCurdsBundleMod;
             ItemSlot hotbarSlot = byPlayer.InventoryManager.ActiveHotbarSlot;
+            List<String> bundles = More_Cheese.More_CheeseModSystem.validBundleInputs;
 
             if (beccb == null) return false;
+
+            if (beccb.State == EnumCurdsBundleModState.Unbundled)
+            {
+                if (bundles.Contains(hotbarSlot.Itemstack?.Collectible.Code.Path) && hotbarSlot.StackSize >= 25) {
+                    Dictionary<String, String> quickComp = More_Cheese.More_CheeseModSystem.BundleRecipes;
+                    outputCh = new AssetLocation((quickComp[hotbarSlot.Itemstack?.Collectible.Code.Path]));
+                    beccb.State = EnumCurdsBundleModState.Bundled;
+                    hotbarSlot.TakeOut(25);
+                }
+                return true;
+            }
 
             if (beccb.State == EnumCurdsBundleModState.Bundled)
             {
@@ -190,7 +214,7 @@ namespace More_Cheese
 
             if (beccb.State == EnumCurdsBundleModState.OpenedSalted)
             {
-                ItemStack cheeseRoll = new ItemStack(api.World.GetItem(new AssetLocation("rawcheese-salted")));
+                ItemStack cheeseRoll = new ItemStack(api.World.GetItem(outputCh));
 
 
                 if (!byPlayer.InventoryManager.TryGiveItemstack(cheeseRoll, true))

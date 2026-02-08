@@ -15,10 +15,11 @@ namespace More_Cheese
 { 
     public enum EnumCurdsBundleModState
     {
-        Bundled = 0,
-        BundledStick = 1,
-        Opened = 2,
-        OpenedSalted = 3
+        Unbundled = 0,
+        Bundled = 1,
+        BundledStick = 2,
+        Opened = 3,
+        OpenedSalted = 4
     }
     public class mcSqueezeableProperties
     {

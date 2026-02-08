@@ -63,9 +63,7 @@
 </ItemGroup>
 
 <ItemGroup>
-  <Folder Include="assets\morecheese\shapes\blocks\food\meal\" />
-  <Folder Include="assets\morecheese\shapes\blocks\ores\" />
-  <Folder Include="assets\morecheese\shapes\item\orechunks\" />
+  <Folder Include="assets\morecheese\blocktypes\shapes\blocks\ores\" />
   <Folder Include="assets\morecheese\textures\powders\" />
   <Folder Include="assets\morecheese\textures\ores\" />
 </ItemGroup>

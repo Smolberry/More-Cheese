@@ -15,5 +15,6 @@
     "morecheese:item-powdered-vell": "Powdered Vell",
     "game:mealrecipe-name-cheesecurds-incontainer": "Cheese Curds",
     "game:Meal-hefty-cheesecurds": "Hefty Cheese Curds",
-    "morecheese:item-cheesecurds": "Cheese Curds"
+    "morecheese:item-cheesecurds": "Cheese Curds",
+    "morecheese:blockhelp-curdbundle-unbundled": "Right click with the correct input."
 }

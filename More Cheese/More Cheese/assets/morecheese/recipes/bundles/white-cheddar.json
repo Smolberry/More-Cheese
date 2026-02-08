@@ -1,0 +1,13 @@
+{
+    "name": "curd-wrap",
+    "inputch": {
+        "type": "item",
+        "code": "morecheese:cheesecurds",
+        "quantity": 25
+    },
+    "output": {
+        "type": "block",
+        "code": "game:white-4slice",
+        "quantity": 1
+    }
+}
