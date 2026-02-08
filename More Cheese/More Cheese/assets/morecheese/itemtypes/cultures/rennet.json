@@ -1,0 +1,66 @@
+{
+    "code": "rennet",
+    "class": "ItemLiquidPortion",
+    "matterState": "liquid",
+    "attributes": {
+        "inContainerTexture": { "base": "game:block/liquid/dye/white", "alpha": 120 },
+        "inBowlShape": { "base": "block/food/meal/liquid" },
+        "waterTightContainerProps": {
+            "containable": true,
+            "isopaque": false,
+            "itemsPerLitre": 100,
+            "texture": {
+                "base": "game:block/liquid/dye/white",
+                "alpha": 120
+            },
+            "allowSpill": true,
+            "whenSpilled": {
+                "action": "DropContents",
+                "stack": {
+                    "type": "item",
+                    "code": "morecheese:rennet"
+                }
+            }
+        }
+    },
+    "texture": {
+        "base": "game:block/liquid/dye/white",
+        "alpha": 120
+    },
+    "shape": {
+        "base": "game:item/liquid"
+    },
+    "creativeinventoryStacks": [
+        {
+            "tabs": [ "game:general", "game:liquids" ],
+            "stacks": [
+                {
+                    "type": "block",
+                    "code": "game:woodbucket",
+                    "attributes": {
+                        "ucontents": [
+                            {
+                                "type": "item",
+                                "code": "morecheese:rennet",
+                                "makefull": true
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "guiTransform": {
+        "rotation": {
+            "x": -57,
+            "y": 37,
+            "z": 4
+        },
+        "origin": {
+            "x": 0.9,
+            "y": 0.8,
+            "z": 0
+        },
+        "scale": 1.32
+    }
+}

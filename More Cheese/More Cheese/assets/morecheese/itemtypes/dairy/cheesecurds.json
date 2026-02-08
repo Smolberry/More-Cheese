@@ -1,0 +1,46 @@
+{
+    "code": "cheesecurds",
+    "maxstacksize": 32,
+    "creativeinventory": {
+        "general": [ "*" ]
+    },
+    "texture": {
+        "base": "morecheese:cheese/cheesecurds.png"
+    },
+    "shape": {
+        "base": "morecheese:item/dairy/cheesecurds.json"
+    },
+    "nutritionProps": {
+        "saturation": 32,
+        "health": 0,
+        "foodcategory": "Dairy"
+    },
+    "attributes": {
+        "juiceableProperties": {
+            "litresPerItem": 0.4,
+            "liquidStack": {
+                "type": "item",
+                "code": "morecheese:whey",
+                "stacksize": 1
+            },
+            "pressedStack": {
+                "type": "item",
+                "code": "morecheese:wrapped-curds",
+                "stacksize": 1
+            }
+        }
+    },
+    "guiTransform": {
+        "translation": {
+            "x": -30,
+            "y": 4,
+            "z": -22
+        },
+        "rotation": {
+            "x": -9,
+            "y": 63,
+            "z": 0
+        },
+        "scale": 2.86
+    }
+}

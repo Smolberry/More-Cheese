@@ -1,0 +1,93 @@
+{
+    "code": "wrapped-curds",
+    "class": "ItemPressedMash",
+    "maxstacksize": 64,
+    "creativeinventory": {
+        "general": [ "*" ],
+        "items": [ "*" ]
+    },
+    "attributes": {
+        "foodTags": [ "fruitmash" ],
+        "juiceableProperties": {
+            "liquidStack": {
+                "type": "item",
+                "code": "morecheese:whey",
+                "stacksize": 1
+            },
+            "pressedStack": {
+                "type": "item",
+                "code": "morecheese:wrapped-curds",
+                "stacksize": 1
+            }
+        }
+    },
+    "shape": { "base": "morecheese:item/dairy/wrapped-curds.json" },
+    "textures": { "material": { "base": "game:block/cloth/linen/normal1.png" } },
+    "fpHandTransform": {
+        "rotation": {
+            "x": 29,
+            "y": 113,
+            "z": -30
+        },
+        "origin": {
+            "x": 0.5,
+            "y": 0.25,
+            "z": 0.5
+        },
+        "scale": 1.44
+    },
+    "guiTransform": {
+        "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotation": {
+            "x": -28,
+            "y": -40,
+            "z": 0
+        },
+        "origin": {
+            "x": 0.49,
+            "y": 0.04,
+            "z": 0.53
+        },
+        "scale": 2.3
+    },
+    "groundTransform": {
+        "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "origin": {
+            "x": 0.5,
+            "y": 0,
+            "z": 0.5
+        },
+        "scale": 2
+    },
+    "tpHandTransform": {
+        "translation": {
+            "x": -1.1,
+            "y": -0.3,
+            "z": -0.9
+        },
+        "rotation": {
+            "x": 1,
+            "y": -34,
+            "z": -11
+        },
+        "origin": {
+            "x": 0.5,
+            "y": 0.25,
+            "z": 0.5
+        },
+        "scale": 0.5
+    }
+}

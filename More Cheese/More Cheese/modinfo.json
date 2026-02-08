@@ -1,0 +1,14 @@
+{
+    "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+    "type": "Code",
+    "modid": "morecheese",
+    "name": "More Cheese",
+    "authors": [
+        "fiberone"
+    ],
+    "description": "Adds more cheese!",
+    "version": "1.0.0",
+    "dependencies": {
+        "game": "1.21.0"
+    }
+}

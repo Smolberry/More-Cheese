@@ -1,0 +1,59 @@
+{
+    "code": "vell",
+    "maxstacksize": 4,
+    "attributes": {
+        "shelvable": "SingleCenter"
+    },
+    "creativeinventory": {
+        "general": [ "*" ]
+    },
+    "texture": {
+        "base": "animal/vell.png"
+    },
+    "shape": {
+        "base": "item/animal/vell.json"
+    },
+    "transitionableProps": [
+        {
+            "type": "dry",
+            "freshHours": { "avg": 0 },
+            "transitionHours": { "avg": 72 },
+            "transitionedStack": {
+                "type": "item",
+                "code": "morecheese:dry-vell"
+            },
+            "transitionRatio": 1
+        }
+    ],
+    "groundTransform": {
+        "translation": {
+            "x": 0,
+            "y": 0.3,
+            "z": 0
+        },
+        "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "origin": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5299
+        },
+        "scale": 2.99
+    },
+    "guiTransform": {
+        "translation": {
+            "x": 3,
+            "y": -23,
+            "z": 0
+        },
+        "rotation": {
+            "x": -99,
+            "y": 0,
+            "z": 0
+        },
+        "scale": 1.67
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "enabled": true,
+    "code": "cheesecurds",
+    "isFood": true,
+    "perishableProps": {
+        "freshHours": { "avg": 1080 },
+        "transitionHours": { "avg": 180 },
+        "transitionRatio": 1,
+        "transitionedStack": {
+            "type": "item",
+            "code": "rot"
+        }
+    },
+    "shape": { "base": "morecheese:blocks/food/meal/cheesecurds.json" },
+    "ingredients": [
+        {
+            "code": "rennet",
+            "validStacks": [
+                {
+                    "type": "item",
+                    "code": "morecheese:rennet",
+                    "shapeElement": "bowl/water"
+                }
+            ],
+            "minQuantity": 1,
+            "maxQuantity": 1,
+            "portionSizeLitres": 0.1
+        },
+        {
+            "code": "milk",
+            "validStacks": [
+                {
+                    "type": "item",
+                    "code": "game:milkportion",
+                    "shapeElement": "bowl/water"
+                }
+            ],
+            "minQuantity": 3,
+            "maxQuantity": 3,
+            "portionSizeLitres": 5
+        }
+    ],
+    "cooksInto": {
+        "type": "Item",
+        "code": "morecheese:cheesecurds",
+        "quantity": 15
+    }
+}

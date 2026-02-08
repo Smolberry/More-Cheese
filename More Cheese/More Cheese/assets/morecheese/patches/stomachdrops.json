@@ -1,0 +1,28 @@
+[
+    {
+        "file": "game:entities/animal/mammal/hooved/sheep-baby.json",
+        "op": "add",
+        "path": "/server/behaviors/6/drops/-",
+        "value": {
+            "type": "item",
+            "code": "morecheese:stomach",
+            "quantity": {
+                "avg": 1,
+                "var": 0
+            }
+        }
+    },
+    {
+        "file": "game:entities/animal/mammal/hooved/goat-baby.json",
+        "op": "add",
+        "path": "/server/behaviors/7/drops/-",
+        "value": {
+            "type": "item",
+            "code": "morecheese:stomach",
+            "quantity": {
+                "avg": 1,
+                "var": 0
+            }
+        }
+    }
+]

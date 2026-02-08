@@ -1,0 +1,25 @@
+{
+    "enabled": false,
+    "code": "cheesecurds",
+    "sealHours": 0,
+    "ingredients": [
+        {
+            "type": "item",
+            "code": "morecheese:rennet",
+            "litres": 0.1,
+            "consumeLitres": 0.1
+        },
+        {
+            "type": "item",
+            "code": "game:milkportion",
+            "name": "milk",
+            "litres": 15,
+            "consumeLitres": 15
+        }
+    ],
+    "output": {
+        "type": "item",
+        "code": "morecheese:cheesecurds",
+        "quantity": 15
+    }
+}

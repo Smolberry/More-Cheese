@@ -1,0 +1,24 @@
+{
+    "ingredientPattern": "K,R,S",
+    "width": 3,
+    "height": 1,
+    "ingredients": {
+        "R": {
+            "type": "item",
+            "code": "game:knife-generic-*",
+            "isTool": true
+        },
+        "K": {
+            "type": "item",
+            "code": "morecheese:stomach"
+        },
+        "S": {
+            "type": "item",
+            "code": "game:salt"
+        }
+    },
+    "output": {
+        "type": "item",
+        "code": "morecheese:vell"
+    }
+}

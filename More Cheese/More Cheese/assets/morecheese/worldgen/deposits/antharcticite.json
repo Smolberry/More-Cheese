@@ -1,0 +1,97 @@
+[
+    {
+        "enabled": true,
+        "code": "arctic-halite",
+        "triesPerChunk": 0.3,
+        "withOreMap": true,
+        "generator": "disc-followsurface",
+        "attributes": {
+            "inblock": {
+                "code": "game:rock-*",
+                "name": "game:rock",
+                "allowedVariants": [
+                    "claystone",
+                    "sandstone",
+                    "shale",
+                    "chalk",
+                    "limestone",
+                    "chert",
+                    "conglomerate"
+                ]
+            },
+            "placeblock": {
+                "code": "game:rock-halite"
+            },
+            "radius": {
+                "dist": "gaussian",
+                "avg": 10,
+                "var": 8
+            },
+            "yPosRel": {
+                "dist": "uniform",
+                "avg": 0.65,
+                "var": 0.2
+            },
+            "thickness": {
+                "dist": "invexp",
+                "avg": 30,
+                "var": 3
+            }
+        },
+        "climate": {
+            "maxTemp": 3
+        },
+        "childDeposits": [
+            {
+                "code": "antharcticite",
+                "triesPerChunk": 0.3,
+                "handbookPageCode": "antharcticite-halite",
+                "generator": "disc-followsealevel",
+                "attributes": {
+                    "randomTries": {
+                        "avg": 40,
+                        "var": 5
+                    },
+                    "placeblock": { "code": "morecheese:ore-antharcticite-halite" },
+                    "radius": {
+                        "dist": "uniform",
+                        "avg": 8,
+                        "var": 0
+                    },
+                    "yPosRel": {
+                        "dist": "uniform",
+                        "avg": 0.7,
+                        "var": 0.3
+                    },
+                    "thickness": {
+                        "dist": "uniform",
+                        "avg": 2,
+                        "var": 1
+                    }
+                }
+            },
+            {
+                "code": "glacierice",
+                "triesPerChunk": 0.3,
+                "generator": "childdeposit-pointcloud",
+                "attributes": {
+                    "randomTries": {
+                        "avg": 10,
+                        "var": 1
+                    },
+                    "placeblock": { "code": "game:glacierice" },
+                    "radius": {
+                        "dist": "gaussian",
+                        "avg": 2,
+                        "var": 0
+                    },
+                    "thickness": {
+                        "dist": "invexp",
+                        "avg": 2,
+                        "var": 1
+                    }
+                }
+            }
+        ]
+    }
+]

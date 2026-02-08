@@ -1,0 +1,43 @@
+{
+    "code": "stomach",
+    "creativeinventory": {
+        "general": [ "*" ]
+    },
+    "texture": {
+        "base": "animal/stomach.png"
+    },
+    "shape": {
+        "base": "item/animal/abomasum.json"
+    },
+    "guiTransform": {
+        "translation": {
+            "x": 31,
+            "y": 7,
+            "z": 0
+        },
+        "rotation": {
+            "x": -53,
+            "y": -54,
+            "z": 0
+        },
+        "scale": 2.09
+    },
+    "groundTransform": {
+        "translation": {
+            "x": 0,
+            "y": 0.37,
+            "z": 0
+        },
+        "rotation": {
+            "x": 3,
+            "y": 0,
+            "z": 0
+        },
+        "origin": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5299
+        },
+        "scale": 3.67
+    }
+}
