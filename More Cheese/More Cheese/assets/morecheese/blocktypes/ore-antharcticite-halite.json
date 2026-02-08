@@ -1,0 +1,28 @@
+{
+    "code": "ore-antharcticite-halite",
+    "creativeinventory": {
+        "general": [ "*" ]
+    },
+    "drawtype": "Cube",
+    "texture": {
+        "base": "morecheese:ores/antharcticite"
+    },
+    "requiredMiningTier": 2,
+    "attributes": {
+        "propickable": false
+    },
+    "drops": [
+        {
+            "type": "item",
+            "code": "morecheese:calcium-chloride",
+            "quantity": {
+                "avg": 7,
+                "var": 1
+            }
+        }/*,
+        {
+            "type": "item",
+            "code": "game:salt"
+        }*/
+    ]
+}

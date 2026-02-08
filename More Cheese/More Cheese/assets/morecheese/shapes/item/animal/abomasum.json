@@ -1,0 +1,60 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"stomach": "animal/stomach"
+	},
+	"elements": [
+		{
+			"name": "Cube2",
+			"from": [ 4.0, 0.0, 6.0 ],
+			"to": [ 11.0, 4.0, 12.0 ],
+			"rotationOrigin": [ 7.0, 1.0, 9.0 ],
+			"faces": {
+				"north": { "texture": "#stomach", "uv": [ 1.0, 3.0, 8.0, 7.0 ], "windMode": [-1,-1,-1,-1] },
+				"east": { "texture": "#stomach", "uv": [ 6.0, 3.0, 9.0, 5.0 ], "autoUv": false, "windMode": [-1,-1,-1,-1] },
+				"south": { "texture": "#stomach", "uv": [ 9.0, 3.0, 16.0, 7.0 ], "windMode": [-1,-1,-1,-1] },
+				"west": { "texture": "#stomach", "uv": [ 9.0, 3.0, 15.0, 7.0 ] },
+				"up": { "texture": "#stomach", "uv": [ 1.0, 0.0, 8.0, 6.0 ], "rotation": 180 },
+				"down": { "texture": "#stomach", "uv": [ 6.0, 0.0, 13.0, 6.0 ] }
+			},
+			"children": [
+				{
+					"name": "Cube3",
+					"from": [ -2.0, 0.0, 0.0 ],
+					"to": [ 0.0, 1.0, 2.0 ],
+					"rotationOrigin": [ -2.0, 0.0, 0.0 ],
+					"faces": {
+						"north": { "texture": "#stomach", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+						"east": { "texture": "#null", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+						"south": { "texture": "#stomach", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+						"west": { "texture": "#stomach", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+						"up": { "texture": "#stomach", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+						"down": { "texture": "#stomach", "uv": [ 0.0, 0.0, 2.0, 1.0 ] }
+					},
+					"children": [
+						{
+							"name": "Cube4",
+							"from": [ 9.0, 2.0, 4.0 ],
+							"to": [ 11.0, 4.0, 6.0 ],
+							"rotationOrigin": [ 9.0, 2.0, 4.0 ],
+							"faces": {
+								"north": { "texture": "#stomach", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+								"east": { "texture": "#stomach", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+								"south": { "texture": "#stomach", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+								"west": { "texture": "#null", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+								"up": { "texture": "#stomach", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+								"down": { "texture": "#stomach", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+							}
+						}
+					]
+				}
+			]
+		}
+	]}

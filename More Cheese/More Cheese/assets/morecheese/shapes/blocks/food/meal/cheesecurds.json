@@ -1,0 +1,78 @@
+{
+	"editor": {
+		"backDropShape": "C:/Users/andre/AppData/Roaming/Vintagestory/assets/survival/shapes/block/clay/bowl-empty-ground",
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"cheesecurds": "cheese/cheesecurds"
+	},
+	"elements": [
+		{
+			"name": "Cube2",
+			"from": [ 6.5, 2.0, 6.5 ],
+			"to": [ 9.5, 2.0, 9.5 ],
+			"rotationOrigin": [ 7.0, 2.0, 8.0 ],
+			"faces": {
+				"north": { "texture": "#null", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+				"east": { "texture": "#null", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+				"south": { "texture": "#null", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+				"west": { "texture": "#null", "uv": [ 0.0, 0.0, 3.0, 0.5 ] },
+				"up": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 3.0, 3.0 ] },
+				"down": { "texture": "#null", "uv": [ 0.0, 0.0, 3.0, 3.0 ] }
+			},
+			"children": [
+				{
+					"name": "Cube3",
+					"from": [ 0.2, -0.3, 2.1 ],
+					"to": [ 1.2, 0.2, 2.6 ],
+					"rotationOrigin": [ 1.0, 0.0, 2.3 ],
+					"rotationX": 15.0,
+					"rotationY": 22.5,
+					"faces": {
+						"north": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"east": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"south": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"west": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"up": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"down": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 1.0, 0.5 ] }
+					}
+				},
+				{
+					"name": "Cube4",
+					"from": [ 1.0, 0.0, 0.5 ],
+					"to": [ 2.0, 0.5, 1.5 ],
+					"rotationOrigin": [ 1.0, 0.0, 0.0 ],
+					"rotationX": 10.0,
+					"faces": {
+						"north": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"east": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"south": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"west": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"up": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+						"down": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 1.0, 1.0 ] }
+					}
+				},
+				{
+					"name": "Cube5",
+					"from": [ 2.0, -0.1, 0.5 ],
+					"to": [ 3.0, 0.4, 1.0 ],
+					"rotationOrigin": [ 2.0, 0.0, 0.0 ],
+					"rotationX": -5.0,
+					"rotationY": -22.5,
+					"faces": {
+						"north": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"east": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"south": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"west": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+						"up": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 1.0, 0.5 ] },
+						"down": { "texture": "#cheesecurds", "uv": [ 0.0, 0.0, 1.0, 0.5 ] }
+					}
+				}
+			]
+		}
+	]}

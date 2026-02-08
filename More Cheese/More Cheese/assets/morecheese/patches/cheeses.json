@@ -1,0 +1,61 @@
+[
+    {
+        "file": "game:itemtypes/food/cheese.json",
+        "op": "addmerge",
+        "path": "/attributes/nutritionPropsWhenInMeal/satietyByType/",
+        "value": {
+            "*-white-1slice": 350
+        }
+    },
+    {
+        "file": "game:itemtypes/food/cheese.json",
+        "op": "addmerge",
+        "path": "/attributes/inPiePropertiesByType/",
+        "value": {
+            "*-white-1slice": {
+                "texture": "morecheese:pie/fill-whitecheddar.png",
+                "partType": "Filling"
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/food/cheese.json",
+        "op": "addmerge",
+        "path": "/variantgroups/0/states/-",
+        "value": "white"
+    },
+    {
+        "file": "game:itemtypes/food/cheese.json",
+        "op": "addmerge",
+        "path": "/nutritionPropsByType/",
+        "value": {
+            "*-white-1slice": {
+                saturation: 200,
+                health: 0,
+                foodcategory: "Dairy"
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/food/cheese.json",
+        "op": "addmerge",
+        "path": "/transitionableProps/0/freshHoursByType",
+        "value": {
+            "cheese-white-*": { avg: 4320 }
+        }
+    },
+    {
+        "file": "game:blocktypes/food/cheese.json",
+        "op": "addmerge",
+        "path": "/textures",
+        "value": {
+            "white":  {"base": "morecheese:cheese/whitejack.png"}
+        }
+    }/*,
+    {
+        "file": "game:blocktypes/food/cheese.json",
+        "op": "addmerge",
+        "path": "",
+        "value":
+    }*/
+]
