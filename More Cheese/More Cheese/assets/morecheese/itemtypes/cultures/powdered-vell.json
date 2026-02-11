@@ -8,7 +8,7 @@
         "general": [ "*" ]
     },
     "texture": {
-        "base": "animal/dry-vell.png"
+        "base": "powders/powdered-dry-vell.png"
     },
     "shape": {
         "base": "game:item/food/flour"

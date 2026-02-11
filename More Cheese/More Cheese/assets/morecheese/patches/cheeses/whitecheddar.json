@@ -51,11 +51,5 @@
         "value": {
             "white":  {"base": "morecheese:cheese/whitejack.png"}
         }
-    }/*,
-    {
-        "file": "game:blocktypes/food/cheese.json",
-        "op": "addmerge",
-        "path": "",
-        "value":
-    }*/
+    }
 ]

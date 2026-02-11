@@ -1,7 +1,7 @@
 {
     "ingredientPattern": "K,R",
-    "width": 2,
-    "height": 1,
+    "width": 1,
+    "height": 2,
     "ingredients": {
         "R": {
             "type": "item",

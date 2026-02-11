@@ -8,6 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="assets\morecheese\blocktypes\shapes\**" />
+    <EmbeddedResource Remove="assets\morecheese\blocktypes\shapes\**" />
+    <None Remove="assets\morecheese\blocktypes\shapes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="VintagestoryAPI">
       <HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
       <Private>false</Private>
@@ -63,7 +69,6 @@
 </ItemGroup>
 
 <ItemGroup>
-  <Folder Include="assets\morecheese\blocktypes\shapes\blocks\ores\" />
   <Folder Include="assets\morecheese\textures\powders\" />
   <Folder Include="assets\morecheese\textures\ores\" />
 </ItemGroup>

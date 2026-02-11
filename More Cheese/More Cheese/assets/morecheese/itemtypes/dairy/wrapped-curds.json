@@ -1,4 +1,5 @@
 {
+    "enabled": false,
     "code": "wrapped-curds",
     "class": "ItemPressedMash",
     "maxstacksize": 64,
@@ -9,15 +10,21 @@
     "attributes": {
         "foodTags": [ "fruitmash" ],
         "juiceableProperties": {
+            "PressedDryRatio": 0.1,
             "liquidStack": {
                 "type": "item",
-                "code": "morecheese:whey",
-                "stacksize": 1
+                "code": "morecheese:whey"
+                //"stacksize": 10
             },
             "pressedStack": {
                 "type": "item",
-                "code": "morecheese:wrapped-curds",
-                "stacksize": 1
+                "code": "morecheese:white-4slice"
+                //"stacksize": 1
+            },
+            "returnStack": {
+                "type": "item",
+                "code": "game:cheese-white-4slice"
+                //"stacksize": 1
             }
         }
     },

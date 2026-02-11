@@ -1,0 +1,27 @@
+{
+    "enabled": false,
+    "ingredientPattern": "C,L",
+    "width": 2,
+    "height": 1,
+    "ingredients": {
+        "C": {
+            "type": "item",
+            "code": "morecheese:cheesecurds",
+            "quantity": 25
+        },
+        "L": {
+            "type": "block",
+            "code": "game:linen-normal-down"
+        }
+    },
+    "output": {
+        "type": "item",
+        "code": "morecheese:wrapped-curds",
+        "quantity": 1,
+        "Attributes": {
+            "juiceableLitresLeft": 10.0,
+            "juiceableLitresTransfered": 0,
+            "squeezeRel": 1
+        }
+    }
+}

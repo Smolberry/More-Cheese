@@ -1,0 +1,55 @@
+[
+    {
+        "file": "game:itemtypes/food/cheese.json",
+        "op": "addmerge",
+        "path": "/attributes/nutritionPropsWhenInMeal/satietyByType/",
+        "value": {
+            "*-aged-white-1slice": 350
+        }
+    },
+    {
+        "file": "game:itemtypes/food/cheese.json",
+        "op": "addmerge",
+        "path": "/attributes/inPiePropertiesByType/",
+        "value": {
+            "*-aged-white-1slice": {
+                "texture": "morecheese:pie/fill-aged-whitecheddar.png",
+                "partType": "Filling"
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/food/cheese.json",
+        "op": "addmerge",
+        "path": "/variantgroups/0/states/-",
+        "value": "aged-white"
+    },
+    {
+        "file": "game:itemtypes/food/cheese.json",
+        "op": "addmerge",
+        "path": "/nutritionPropsByType/",
+        "value": {
+            "*-aged-white-1slice": {
+                "saturation": 200,
+                "health": 0,
+                "foodcategory": "Dairy"
+            }
+        }
+    },
+    {
+        "file": "game:itemtypes/food/cheese.json",
+        "op": "addmerge",
+        "path": "/transitionableProps/0/freshHoursByType",
+        "value": {
+            "cheese-aged-white-*": { "avg": 4320 }
+        }
+    },
+    {
+        "file": "game:blocktypes/food/cheese.json",
+        "op": "addmerge",
+        "path": "/textures",
+        "value": {
+            "aged-white": { "base": "morecheese:cheese/aged-whitejack.png" }
+        }
+    }
+]
