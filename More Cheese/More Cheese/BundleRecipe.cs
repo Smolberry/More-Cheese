@@ -44,19 +44,34 @@ public class BundleRecipe : RecipeBase<BundleRecipe>
     public override Dictionary<string, string[]> GetNameToCodeMapping(IWorldAccessor world)
     {
         Dictionary<string, string[]> mappings = new Dictionary<string, string[]>();
+        AddIngredientMapping(world, mappings, InputCh);
+        AddIngredientMapping(world, mappings, OutputCh);
+
+        return mappings;
+    }
+
+    private void AddIngredientMapping(IWorldAccessor world, Dictionary<string, string[]> mappings, CraftingRecipeIngredient ingredient)
+    {
+        if (ingredient?.Name == null || ingredient.Name.Length == 0) return;
+
+        AssetLocation assetloc = ingredient.Code;
+        int wildcardStartLen = assetloc.Path.IndexOf('*');
+        if (wildcardStartLen == -1) return;
+
+        int wildcardEndLen = assetloc.Path.Length - wildcardStartLen - 1;
+
         List<string> codes = new List<string>();
-        if ((OutputCh.Name == null || OutputCh.Name.Length == 0) || (InputCh.Name == null || InputCh.Name.Length == 0)) return;
-        AssetLocation assetLoc1 = InputCh.Code;
-        AssetLocation assetLoc2 = OutputCh.Code;
-        if (InputCh.Type == EnumItemClass.Block)
+
+        if (ingredient.Type == EnumItemClass.Block)
         {
             foreach (var block in world.Blocks)
             {
-                if (block.IsMissing) continue;    // BlockList already performs the null check for us, in its enumerator
+                if (block.IsMissing) continue;
 
-                if (val.Value.SkipVariants != null && WildcardUtil.MatchesVariants(assetloc, block.Code, val.Value.SkipVariants)) continue;
+                if (ingredient.SkipVariants != null &&
+                    WildcardUtil.MatchesVariants(assetloc, block.Code, ingredient.SkipVariants)) continue;
 
-                if (WildcardUtil.Match(assetloc, block.Code, val.Value.AllowedVariants))
+                if (WildcardUtil.Match(assetloc, block.Code, ingredient.AllowedVariants))
                 {
                     string code = block.Code.Path.Substring(wildcardStartLen);
                     string codepart = code.Substring(0, code.Length - wildcardEndLen).DeDuplicate();
@@ -64,7 +79,27 @@ public class BundleRecipe : RecipeBase<BundleRecipe>
                 }
             }
         }
+        else
+        {
+            foreach (var item in world.Items)
+            {
+                if (item?.Code == null || item.IsMissing) continue;
+
+                if (ingredient.SkipVariants != null &&
+                    WildcardUtil.MatchesVariants(assetloc, item.Code, ingredient.SkipVariants)) continue;
+
+                if (WildcardUtil.Match(assetloc, item.Code, ingredient.AllowedVariants))
+                {
+                    string code = item.Code.Path.Substring(wildcardStartLen);
+                    string codepart = code.Substring(0, code.Length - wildcardEndLen).DeDuplicate();
+                    codes.Add(codepart);
+                }
+            }
+        }
+
+            mappings[ingredient.Name] = codes.ToArray();
     }
+
 
     public override bool Resolve(IWorldAccessor world, string sourceForErrorLogging)
     {

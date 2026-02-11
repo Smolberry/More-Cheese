@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using HarmonyLib;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using Vintagestory.API.MathTools;
@@ -149,11 +151,17 @@ namespace More_Cheese
 
             if (beccb.State == EnumCurdsBundleModState.Unbundled)
             {
-                if (bundles.Contains(hotbarSlot.Itemstack?.Collectible.Code.Path) && hotbarSlot.StackSize >= 25) {
+                if (bundles.Contains(hotbarSlot.Itemstack?.Collectible.Code) && hotbarSlot.StackSize >= 25) {
                     Dictionary<String, String> quickComp = More_Cheese.More_CheeseModSystem.BundleRecipes;
-                    outputCh = new AssetLocation((quickComp[hotbarSlot.Itemstack?.Collectible.Code.Path]));
+                    api.Logger.Debug($"Bundle recipe has been triggered with{quickComp[hotbarSlot.Itemstack?.Collectible.Code]}");
+                    AssetLocation inputCh = new AssetLocation(hotbarSlot.Itemstack?.Collectible.Code);
+                    ItemStack thing = new ItemStack(api.World.GetItem(inputCh));
+                    thing.StackSize = 25;
+                    beccb.Inventory[0].Itemstack = thing;
+                    outputCh = new AssetLocation((quickComp[hotbarSlot.Itemstack?.Collectible.Code]));
                     beccb.State = EnumCurdsBundleModState.Bundled;
                     hotbarSlot.TakeOut(25);
+                    hotbarSlot.MarkDirty();
                 }
                 return true;
             }
@@ -215,7 +223,7 @@ namespace More_Cheese
             if (beccb.State == EnumCurdsBundleModState.OpenedSalted)
             {
                 ItemStack cheeseRoll = new ItemStack(api.World.GetItem(outputCh));
-
+                api.Logger.Debug($"Bundle recipe has registered output as with{cheeseRoll.Item.Code}");
 
                 if (!byPlayer.InventoryManager.TryGiveItemstack(cheeseRoll, true))
                 {

@@ -5,9 +5,9 @@
         "code": "morecheese:cheesecurds",
         "quantity": 25
     },
-    "output": {
+    "outputch": {
         "type": "block",
-        "code": "game:white-4slice",
+        "code": "game:cheese-white-4slice",
         "quantity": 1
     }
 }

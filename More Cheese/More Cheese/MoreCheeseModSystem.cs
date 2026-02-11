@@ -14,6 +14,10 @@ namespace More_Cheese
     /* there is no cow's milk, so make adjustments to cow's milk cheese recipes by using 25-50% less rennet and adding calcium chloride
      * calcium chloride can be obtained via antarcitite found in halite
      * orange/yellow cheddar can be obtained by either dying white cheddar before curing/aging or by feeding cows a lot of carrots (and getting yellow/orange milk)
+     * 
+     * todo
+     * add a cheese press/rock on cheese cloth system to replace/add an alternative to the cheesewrap
+     * implement workability with a culinary artillery
      */
     public class More_CheeseModSystem : ModSystem
     {
@@ -39,13 +43,17 @@ namespace More_Cheese
             Mod.Logger.Notification("Hello from template mod client side: " + Lang.Get("more cheese:hello"));
         }
         public override void AssetsLoaded(ICoreAPI api) {
-            ///List<IAsset> things = new List<IAsset>();
-            ///api.Assets.GetMany<BundleRecipe>(api.Logger, "morecheese").;
-            ///things[1].
-            ///
             LoadRecipes<BundleRecipe>(api, "bundle recipe", "recipes/bundles", (r) => RegisterBundleRecipe(r));
             getValidBundleInputs(Bundles);
-            getStringifiedBundleRecipies(Bundles);
+            if (BundleRecipes.Count == 0)
+            {
+                getStringifiedBundleRecipies(Bundles);
+            }
+            //else
+            //{
+            //    BundleRecipes.Clear();
+            //    getStringifiedBundleRecipies(Bundles);
+            //}
         }
         public void LoadRecipes<TRecipe>(ICoreAPI api, string name, string path, System.Action<TRecipe> RegisterMethod) where TRecipe : BundleRecipe
         {
@@ -136,7 +144,7 @@ namespace More_Cheese
             {
                 if (recipe.InputCh != null)
                 {
-                    validBundleInputs.Add(item: recipe.InputCh.Code.Path);
+                    validBundleInputs.Add(item: recipe.InputCh.Code);
                 }
             }
         }
@@ -146,7 +154,7 @@ namespace More_Cheese
             {
                 if (recipe.InputCh != null && recipe.OutputCh != null)
                 {
-                    BundleRecipes.Add(recipe.InputCh.Code.Path, recipe.OutputCh.Code.Path);
+                    BundleRecipes.Add(recipe.InputCh.Code, recipe.OutputCh.Code);
                 }
             }
         }

@@ -1,0 +1,28 @@
+[
+    {
+        "Ingredients": [
+            {
+                "type": "item",
+                "code": "morecheese:rennet",
+                "quantity": 10
+            },
+            {
+                "type": "item",
+                "code": "game:milkportion",
+                "quantity": 1500
+            }
+        ],
+        "Simmering": {
+            "meltingPoint": 116,
+            "meltingDuration": 30,
+            "smeltedRatio": 1,
+            "smeltingType": "bake",
+            "smeltedStack": {
+                "type": "item",
+                "code": "morecheese:cheesecurds",
+                "quantity": 15
+            },
+            "requiresContainer": false
+        }
+    }
+]
