@@ -4,7 +4,7 @@
         "op": "addmerge",
         "path": "/attributes/nutritionPropsWhenInMeal/satietyByType/",
         "value": {
-            "*-waxed-white-1slice": 350
+            "*-waxedwhite-1slice": 350
         }
     },
     {
@@ -12,8 +12,8 @@
         "op": "addmerge",
         "path": "/attributes/inPiePropertiesByType/",
         "value": {
-            "*-waxed-white-1slice": {
-                "texture": "morecheese:pie/fill-waxed-whitecheddar.png",
+            "*-waxedwhite-1slice": {
+                "texture": "morecheese:pie/fill-whitecheddar.png",
                 "partType": "Filling"
             }
         }
@@ -22,14 +22,14 @@
         "file": "game:itemtypes/food/cheese.json",
         "op": "addmerge",
         "path": "/variantgroups/0/states/-",
-        "value": "waxed-white"
+        "value": "waxedwhite"
     },
     {
         "file": "game:itemtypes/food/cheese.json",
         "op": "addmerge",
         "path": "/nutritionPropsByType/",
         "value": {
-            "*-waxed-white-1slice": {
+            "*-waxedwhite-1slice": {
                 "saturation": 200,
                 "health": 0,
                 "foodcategory": "Dairy"
@@ -41,7 +41,7 @@
         "op": "addmerge",
         "path": "/transitionableProps/0/freshHoursByType",
         "value": {
-            "cheese-waxed-white-*": { "avg": 4320 }
+            "cheese-waxedwhite-*": { "avg": 4320 }
         }
     },
     {
@@ -49,7 +49,7 @@
         "op": "addmerge",
         "path": "/textures",
         "value": {
-            "waxed-white": { "base": "morecheese:cheese/waxed-whitejack.png" }
+            "waxedwhite": { "base": "morecheese:cheese/waxedwhitejack.png" }
         }
     }
 ]

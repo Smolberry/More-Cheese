@@ -30,9 +30,9 @@
         "path": "/nutritionPropsByType/",
         "value": {
             "*-white-1slice": {
-                saturation: 200,
-                health: 0,
-                foodcategory: "Dairy"
+                "saturation": 200,
+                "health": 0,
+                "foodcategory": "Dairy"
             }
         }
     },

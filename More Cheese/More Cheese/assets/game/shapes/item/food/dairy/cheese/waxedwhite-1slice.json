@@ -1,0 +1,113 @@
+{
+    "editor": {
+        "allAngles": false,
+        "singleTexture": false
+    },
+    "textureWidth": 16,
+    "textureHeight": 16,
+    "textures": {
+        "waxedwhite": "morecheese:cheese/waxedwhitejack.png"
+    },
+    "elements": [
+        {
+            "name": "CheeseBodyBig",
+            "from": [ 4.0, 0.0, 4.0 ],
+            "to": [ 8.0, 4.0, 8.0 ],
+            "rotationOrigin": [ 8.0, 0.0, 8.0 ],
+            "faces": {
+                "north": {
+                    "texture": "#waxedwhite",
+                    "uv": [ 0.0, 8.0, 4.0, 12.0 ]
+                },
+                "east": {
+                    "texture": "#waxedwhite",
+                    "uv": [ 2.0, 12.0, 6.0, 16.0 ]
+                },
+                "south": {
+                    "texture": "#waxedwhite",
+                    "uv": [ 0.0, 12.0, 4.0, 16.0 ]
+                },
+                "west": {
+                    "texture": "#waxedwhite",
+                    "uv": [ 0.0, 8.0, 4.0, 12.0 ]
+                },
+                "up": {
+                    "texture": "#waxedwhite",
+                    "uv": [ 0.0, 0.0, 4.0, 4.0 ]
+                },
+                "down": {
+                    "texture": "#waxedwhite",
+                    "uv": [ 3.0, 4.0, 7.0, 8.0 ]
+                }
+            },
+            "children": [
+                {
+                    "name": "CheeseN",
+                    "from": [ 1.0, 0.0, -1.0 ],
+                    "to": [ 4.0, 4.0, 0.0 ],
+                    "rotationOrigin": [ 4.0, 0.0, -1.0 ],
+                    "faces": {
+                        "north": {
+                            "texture": "#waxedwhite",
+                            "uv": [ 1.0, 8.0, 4.0, 12.0 ]
+                        },
+                        "east": {
+                            "texture": "#waxedwhite",
+                            "uv": [ 3.0, 12.0, 4.0, 16.0 ]
+                        },
+                        "south": {
+                            "texture": "#waxedwhite",
+                            "uv": [ 0.0, 4.0, 3.0, 8.0 ],
+                            "enabled": false
+                        },
+                        "west": {
+                            "texture": "#waxedwhite",
+                            "uv": [ 5.0, 8.0, 6.0, 12.0 ]
+                        },
+                        "up": {
+                            "texture": "#waxedwhite",
+                            "uv": [ 0.0, 6.0, 3.0, 7.0 ]
+                        },
+                        "down": {
+                            "texture": "#waxedwhite",
+                            "uv": [ 2.0, 2.0, 5.0, 3.0 ]
+                        }
+                    }
+                },
+                {
+                    "name": "CheeseW",
+                    "from": [ -1.0, 0.0, 1.0 ],
+                    "to": [ 0.0, 4.0, 4.0 ],
+                    "rotationOrigin": [ -1.0, 0.0, 1.0 ],
+                    "faces": {
+                        "north": {
+                            "texture": "#waxedwhite",
+                            "uv": [ 3.0, 8.0, 4.0, 12.0 ]
+                        },
+                        "east": {
+                            "texture": "#waxedwhite",
+                            "uv": [ 12.0, 10.0, 15.0, 14.0 ],
+                            "enabled": false
+                        },
+                        "south": {
+                            "texture": "#waxedwhite",
+                            "uv": [ 1.0, 12.0, 2.0, 16.0 ]
+                        },
+                        "west": {
+                            "texture": "#waxedwhite",
+                            "uv": [ 2.0, 8.0, 5.0, 12.0 ]
+                        },
+                        "up": {
+                            "texture": "#waxedwhite",
+                            "uv": [ 6.0, 1.0, 7.0, 4.0 ]
+                        },
+                        "down": {
+                            "texture": "#waxedwhite",
+                            "uv": [ 4.0, 4.0, 5.0, 7.0 ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
