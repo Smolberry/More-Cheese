@@ -69,6 +69,8 @@
 </ItemGroup>
 
 <ItemGroup>
+  <Folder Include="assets\game\shapes\item\food\dairy\cheese\" />
+  <Folder Include="assets\morecheese\shapes\blocks\food\cheese\" />
   <Folder Include="assets\morecheese\textures\powders\" />
   <Folder Include="assets\morecheese\textures\ores\" />
 </ItemGroup>

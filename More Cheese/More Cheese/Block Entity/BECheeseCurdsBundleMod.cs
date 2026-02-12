@@ -21,11 +21,11 @@ namespace More_Cheese
         Opened = 3,
         OpenedSalted = 4
     }
-    public class mcSqueezeableProperties
-    {
-        public JsonItemStack CheeseOut;
-        public Dictionary<string, AssetLocation> Recipes = new();
-    }
+    //public class mcSqueezeableProperties
+    //{
+    //    public JsonItemStack CheeseOut;
+    //    public Dictionary<string, AssetLocation> Recipes = new();
+    //}
 
     public class BECheeseCurdsBundleMod : BlockEntityContainer
     {

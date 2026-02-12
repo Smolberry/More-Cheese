@@ -1,5 +1,6 @@
 [
     {
+        "enabled": false,
         "file": "game:itemtypes/food/cheese.json",
         "op": "addmerge",
         "path": "/attributes/nutritionPropsWhenInMeal/satietyByType/",
@@ -8,6 +9,7 @@
         }
     },
     {
+        "enabled": false,
         "file": "game:itemtypes/food/cheese.json",
         "op": "addmerge",
         "path": "/attributes/inPiePropertiesByType/",
@@ -19,12 +21,14 @@
         }
     },
     {
+        "enabled": false,
         "file": "game:itemtypes/food/cheese.json",
         "op": "addmerge",
         "path": "/variantgroups/0/states/-",
         "value": "agedwhite"
     },
     {
+        "enabled": false,
         "file": "game:itemtypes/food/cheese.json",
         "op": "addmerge",
         "path": "/nutritionPropsByType/",
@@ -37,6 +41,7 @@
         }
     },
     {
+        "enabled": false,
         "file": "game:itemtypes/food/cheese.json",
         "op": "addmerge",
         "path": "/transitionableProps/0/freshHoursByType",
@@ -45,6 +50,7 @@
         }
     },
     {
+        "enabled": false,
         "file": "game:blocktypes/food/cheese.json",
         "op": "addmerge",
         "path": "/textures",

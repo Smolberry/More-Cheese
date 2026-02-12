@@ -1,0 +1,24 @@
+[
+    {
+        "enabled": false,
+        "file": "game:itemtypes/food/cheese.json",
+        "op": "add",
+        "path": "/transitionableProps/-",
+        "value": {
+            "type": "Cure",
+            "freshHoursByType": {
+                "cheese-waxedwhite-4slice": { "avg": 36 }
+            },
+            "transitionHoursByType": {
+                "cheese-waxedwhite-4slice": { "avg": 720 }
+            },
+            "transitionedStackByType": {
+                "cheese-waxedwhite-4slice": {
+                    "type": "item",
+                    "code": "cheese-agedwhite-4slice"
+                }
+            }
+        }
+
+    }
+]

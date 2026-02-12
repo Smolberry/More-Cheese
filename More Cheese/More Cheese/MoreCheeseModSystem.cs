@@ -18,6 +18,7 @@ namespace More_Cheese
      * todo
      * add a cheese press/rock on cheese cloth system to replace/add an alternative to the cheesewrap
      * implement workability with a culinary artillery
+     * mold cultivation process
      */
     public class More_CheeseModSystem : ModSystem
     {
@@ -30,7 +31,10 @@ namespace More_Cheese
         {
             Mod.Logger.Notification("Hello from template mod: " + api.Side);
             api.RegisterBlockClass("BlockCheeseCurdsBundleMod", typeof(BlockCheeseCurdsBundleMod));
+            api.RegisterBlockClass("BlockCheeseMod", typeof(BlockCheeseMod));
             api.RegisterBlockEntityClass("CheeseCurdsBundleMod", typeof(BECheeseCurdsBundleMod));
+            api.RegisterBlockEntityClass("CheeseMod", typeof(BECheeseMod));
+            api.RegisterItemClass("ItemModCheese", typeof(ItemModCheese));
         }
 
         public override void StartServerSide(ICoreServerAPI api)

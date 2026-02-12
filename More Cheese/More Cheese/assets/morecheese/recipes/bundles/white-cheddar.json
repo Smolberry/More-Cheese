@@ -7,7 +7,7 @@
     },
     "outputch": {
         "type": "block",
-        "code": "game:cheese-white-4slice",
+        "code": "morecheese:cheesemod-white-4slice",
         "quantity": 1
     }
 }
