@@ -19,6 +19,8 @@ namespace More_Cheese
      * add a cheese press/rock on cheese cloth system to replace/add an alternative to the cheesewrap
      * implement workability with a culinary artillery
      * mold cultivation process
+     *  make bread perish into *random* molds
+     *  via random drops (aka the actual item can be whatever)
      */
     public class More_CheeseModSystem : ModSystem
     {

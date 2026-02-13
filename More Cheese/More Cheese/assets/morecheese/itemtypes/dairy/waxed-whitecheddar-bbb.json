@@ -69,7 +69,7 @@
         "shelvableByType": {
             "*-1slice": "Quadrants",
             "*-2slice": "Halves",
-            "*-*": "SingleCenter"
+            "*": "SingleCenter"
         },
         "nutritionPropsWhenInMeal": {
             "satietyByType": {
@@ -119,26 +119,9 @@
         }
     },
     "transitionableProps": [
-
-        {
-            "type": "Ripen",
-            "freshHours": {"avg": 0},
-            "transitionHours": { "avg": 336 },
-            "transitionedStack": {
-                "type": "item",
-                "codeByType": {
-                    "*-waxedwhite-4slice":"*-agedwhite-4slice"
-                }
-
-            }
-            //"transitionRatioByType": {
-            //    "*-waxedwhite-4slice": 4
-            //}
-        },
         {
             "type": "Perish",
             "freshHoursByType": {
-                "*-waxedwhite-*": { "avg": 8640 },
                 "*-agedwhite-*": { "avg": 5280 }
             },
             "transitionHours": { "avg": 168 },
@@ -155,6 +138,32 @@
         }
 
     ],
+    "transitionablePropsByType": {
+        "*-waxedwhite-4slice": [
+            {
+                "type": "Ripen",
+                "freshHours": { "avg": 0 },
+                "transitionHours": { "avg": 336 },
+                "transitionedStack": {
+                    "type": "item",
+                    "code": "morecheese:cheesemod-agedwhite-4slice"
+                }
+
+            },
+            {
+                "type": "perish",
+                "freshHours": { "avg": 8640 },
+                "transitionHours": { "avg": 168 },
+                "transitionRatioByType": {
+                    "*-1slice": 1,
+                    "*-2slice": 2,
+                    "*-3slice": 3,
+                    "*-4slice": 4
+                }
+
+            }
+        ]
+    },
     "guiTransformByType": {
         "*-1slice": {
             "translation": {
